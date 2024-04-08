@@ -14,7 +14,7 @@ function preload() {
 function setup() {
     let magnitude = [];
     let placeslist = [];
-    canvas = createCanvas(700, 500).parent('black-container');
+    canvas = createCanvas(700, 450).parent('black-container');
     totalRows = data.getRowCount();
     places = data.getColumn('location name');
     for (let i = 0; i < places.length; i++) {
