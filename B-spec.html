@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>B spec</title>
+    <!-- <style>
+        /* body {
+            background-color: #f0f0f0;
+        } */
+
+        .bar {
+            fill: steelblue;
+        }
+    </style> -->
+
 </head>
 
 <body class="is-preload">
@@ -19,13 +29,21 @@
 
     <div id="main">
         <p style="font-size: 20px; margin-bottom: 5px;">
-            <strong><u>Black Hat: </u></strong><br>
+            <strong><u>Black Hat: </u></strong><br><br>
             <img src="images/blackhat-line.png" alt="Black Hat Line Chart" width="500" height="300">
             <br>
+            <strong><u>White Hat: </u></strong>
         </p>
-        <br><br>
        
+
+        <div id="d3-viz-container"></div>
+    
     </div>
+
+    <!-- <script src="assets/js/browser.min.js"></script> -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="B-whitehat.js"></script>
+    
 
 </body>
 
