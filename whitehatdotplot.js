@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var margin = { top: 10, right: 50, bottom: 30, left: 90 },
+var margin = { top: 10, right: 50, bottom: 50, left: 90 },
     width = 460 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -22,6 +22,14 @@ d3.csv("https://gist.githubusercontent.com/chansrinivas/3377e2bbd352bd4fbec4efec
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x))
+
+        // Add X axis label
+        svg.append("text")
+            .attr("transform",
+                "translate(" + (width / 2) + " ," +
+                (height + margin.top + 20) + ")")
+            .style("text-anchor", "middle")
+            .text("Average Magnitude");
 
         // Y axis
         var y = d3.scaleBand()
